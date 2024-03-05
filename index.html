@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./image/Logo.png" alt="Logo de Alura">
+        <h1>Encriptador de Texto.</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <textarea class="input" placeholder="Ingrese el texto aquí."></textarea>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+
+            <div>
+                <textarea class="output" readonly="true"></textarea>
+            </div>
+            <div class="botones">
+                <button class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nicolás Fiorito. Todos los derechos reservados.</p>
+        <p>Desarrollador de Software</p>
+        <p>Correo Electrónico: <a href="mailto:nicolas.fiorito@email.com">fioritojavier@gmail.com</a></p>
+    </footer>
+
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>
