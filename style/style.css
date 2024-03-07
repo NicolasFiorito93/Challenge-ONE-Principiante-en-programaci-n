@@ -80,7 +80,7 @@ main {
       border: none;
       border-radius: 15px;
       cursor: pointer;
-      background: var(--bgcolorboton);
+      background: var(--bgcolorsecundario);
       color: #fff;
     }
   }
@@ -90,7 +90,8 @@ textarea:focus {
   outline: none;
 }
 
-button:hover {
+.botones button:hover {
+  background: var(--bgcolorboton);
   transform: scale(1.1);
 }
 
