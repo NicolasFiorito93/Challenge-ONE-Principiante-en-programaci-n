@@ -17,6 +17,9 @@ function btnEncriptar() {
         let mensajeEncriptado = encriptar(input.value.toLowerCase());
         output.textContent = mensajeEncriptado;
         input.value = "";
+        output.style = "background-image: none";
+    } else {
+        btnBorrar();
     }
 }
 
@@ -36,6 +39,9 @@ function btnDesencriptar() {
         let mensajeDesencriptado = desencriptar(input.value.toLowerCase());
         output.textContent = mensajeDesencriptado;
         input.value = "";
+        output.style = "background-image: none";
+    } else {
+        btnBorrar();
     }
 }
 
@@ -44,4 +50,9 @@ function copiar() {
     document.execCommand('copy');
     window.getSelection().removeAllRanges(); // Esto deseleccionará el texto
     output.blur()
+}
+
+function btnBorrar() {
+    output.textContent = "";
+    output.style = "background-image: url(../image/no-results-found1.jpg);";
 }
