@@ -64,7 +64,7 @@ main {
     background-size: 40%;
   }
 
-  .output.no-input {
+  .no-image {
     background-image: none;
   }
 

@@ -17,7 +17,7 @@ function btnEncriptar() {
         let mensajeEncriptado = encriptar(input.value.toLowerCase());
         output.textContent = mensajeEncriptado;
         input.value = "";
-        output.style = "background-image: none";
+        output.classList.add("no-image");
     } else {
         btnBorrar();
     }
@@ -54,5 +54,5 @@ function copiar() {
 
 function btnBorrar() {
     output.textContent = "";
-    output.style = "background-image: url(../image/no-results-found1.jpg);";
+    output.classList.remove("no-image");
 }
