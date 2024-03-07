@@ -39,7 +39,7 @@ function btnDesencriptar() {
         let mensajeDesencriptado = desencriptar(input.value.toLowerCase());
         output.textContent = mensajeDesencriptado;
         input.value = "";
-        output.style = "background-image: none";
+        output.classList.add("no-image");
     } else {
         btnBorrar();
     }
